@@ -1,0 +1,172 @@
+{
+  "selected_features": [
+    "temperatura_distancia_optima",
+    "temp_optima_dist",
+    "no2_ugm3",
+    "co2_distancia_optima",
+    "indice_condiciones_luz",
+    "co2_par_ratio",
+    "co2_ppm_log",
+    "o3_ugm3",
+    "co2_ppm_sqrt",
+    "co2_ppm",
+    "espectro_pico_nm",
+    "ajuste_co2_ppm",
+    "vocs_mgm3",
+    "vocs_mgm3_log",
+    "eficiencia_normalizada",
+    "indice_estres_ambiental",
+    "mes",
+    "aqi_indice",
+    "par_temp_ratio",
+    "temp_co2_interaction",
+    "par_co2_interaction",
+    "pm10_ugm3",
+    "ajuste_temp_c",
+    "calidad_luz_ratio",
+    "purificacion_requerida_pct",
+    "humedad_vpd_interaction",
+    "mes_cos",
+    "par_distancia_optima",
+    "mes_sin",
+    "temp_humedad_interaction",
+    "temperatura_c",
+    "humedad_rel_pct",
+    "par_umol_m2_s"
+  ],
+  "feature_count": 33,
+  "selection_method": "combined_score",
+  "top_k_selected": 30,
+  "feature_groups_analysis": {
+    "ambientales_base": {
+      "count": 5,
+      "avg_importance": 0.1862393884429462,
+      "max_importance": 0.42017375043968586,
+      "top_feature": "co2_ppm"
+    },
+    "calidad_aire": {
+      "count": 3,
+      "avg_importance": 0.2868104717029836,
+      "max_importance": 0.37196117545482715,
+      "top_feature": "vocs_mgm3"
+    },
+    "temporales": {
+      "count": 9,
+      "avg_importance": 0.1837136495695357,
+      "max_importance": 0.32564404203962033,
+      "top_feature": "mes"
+    },
+    "interacciones": {
+      "count": 5,
+      "avg_importance": 0.23176776309229474,
+      "max_importance": 0.2545490057206386,
+      "top_feature": "temp_co2_interaction"
+    },
+    "ratios": {
+      "count": 4,
+      "avg_importance": 0.2915241624193259,
+      "max_importance": 0.4382264543631818,
+      "top_feature": "co2_par_ratio"
+    },
+    "distancias": {
+      "count": 7,
+      "avg_importance": 0.3128258646761994,
+      "max_importance": 0.48179296925302734,
+      "top_feature": "temperatura_distancia_optima"
+    },
+    "transformaciones": {
+      "count": 7,
+      "avg_importance": 0.2518649612005847,
+      "max_importance": 0.43479065480431417,
+      "top_feature": "co2_ppm_log"
+    },
+    "indices": {
+      "count": 3,
+      "avg_importance": 0.3738999155674176,
+      "max_importance": 0.44922429589362906,
+      "top_feature": "indice_condiciones_luz"
+    }
+  },
+  "validation_results": {
+    "high_correlations": [
+      [
+        "temperatura_distancia_optima",
+        "temp_optima_dist",
+        1.0000000000000002
+      ],
+      [
+        "co2_ppm_log",
+        "co2_ppm_sqrt",
+        0.9958855581187063
+      ],
+      [
+        "co2_ppm_log",
+        "co2_ppm",
+        0.9842445751797586
+      ],
+      [
+        "co2_ppm_sqrt",
+        "co2_ppm",
+        0.9961871246436328
+      ],
+      [
+        "vocs_mgm3",
+        "vocs_mgm3_log",
+        0.9967116546268977
+      ],
+      [
+        "ajuste_temp_c",
+        "temperatura_c",
+        0.989491817748686
+      ]
+    ],
+    "low_variance": [
+      "eficiencia_normalizada",
+      "indice_estres_ambiental",
+      "calidad_luz_ratio"
+    ],
+    "skewed_features": []
+  },
+  "feature_importance_top10": [
+    {
+      "feature": "temperatura_distancia_optima",
+      "combined_score": 0.48179296925302734
+    },
+    {
+      "feature": "temp_optima_dist",
+      "combined_score": 0.48138868804061996
+    },
+    {
+      "feature": "no2_ugm3",
+      "combined_score": 0.47193093807662606
+    },
+    {
+      "feature": "co2_distancia_optima",
+      "combined_score": 0.46436183602807585
+    },
+    {
+      "feature": "indice_condiciones_luz",
+      "combined_score": 0.44922429589362906
+    },
+    {
+      "feature": "co2_par_ratio",
+      "combined_score": 0.4382264543631818
+    },
+    {
+      "feature": "co2_ppm_log",
+      "combined_score": 0.43479065480431417
+    },
+    {
+      "feature": "o3_ugm3",
+      "combined_score": 0.42517173104425404
+    },
+    {
+      "feature": "co2_ppm_sqrt",
+      "combined_score": 0.421676777023494
+    },
+    {
+      "feature": "co2_ppm",
+      "combined_score": 0.42017375043968586
+    }
+  ]
+}

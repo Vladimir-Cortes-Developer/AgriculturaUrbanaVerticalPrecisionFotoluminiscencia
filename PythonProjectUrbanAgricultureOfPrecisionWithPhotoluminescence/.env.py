@@ -1,0 +1,4 @@
+# .env
+SECRET_KEY=4ab781106fdc44e38a2f29e2238921cf
+DEBUG=true
+MODELS_PATH=./models

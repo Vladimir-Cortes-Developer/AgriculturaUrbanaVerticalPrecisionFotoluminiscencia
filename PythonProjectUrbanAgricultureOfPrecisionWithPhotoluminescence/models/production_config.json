@@ -1,0 +1,371 @@
+{
+  "models": {
+    "eficiencia": {
+      "file": "eficiencia_linearregression.joblib",
+      "scaler_file": null,
+      "features": [
+        "temperatura_distancia_optima",
+        "temp_optima_dist",
+        "no2_ugm3",
+        "co2_distancia_optima",
+        "indice_condiciones_luz",
+        "co2_par_ratio",
+        "co2_ppm_log",
+        "o3_ugm3",
+        "co2_ppm_sqrt",
+        "co2_ppm",
+        "espectro_pico_nm",
+        "ajuste_co2_ppm",
+        "vocs_mgm3",
+        "vocs_mgm3_log",
+        "eficiencia_normalizada",
+        "indice_estres_ambiental",
+        "mes",
+        "aqi_indice",
+        "par_temp_ratio",
+        "temp_co2_interaction",
+        "par_co2_interaction",
+        "pm10_ugm3",
+        "ajuste_temp_c",
+        "calidad_luz_ratio",
+        "purificacion_requerida_pct",
+        "humedad_vpd_interaction",
+        "mes_cos",
+        "par_distancia_optima",
+        "mes_sin",
+        "temp_humedad_interaction",
+        "temperatura_c",
+        "humedad_rel_pct",
+        "par_umol_m2_s"
+      ],
+      "target_range": [
+        0,
+        100
+      ],
+      "expected_mae": 1.588681186603935e-13
+    },
+    "fotoluminiscencia": {
+      "file": "fotoluminiscencia_randomforest.joblib",
+      "scaler_file": null,
+      "features": [
+        "temperatura_distancia_optima",
+        "temp_optima_dist",
+        "no2_ugm3",
+        "co2_distancia_optima",
+        "indice_condiciones_luz",
+        "co2_par_ratio",
+        "co2_ppm_log",
+        "o3_ugm3",
+        "co2_ppm_sqrt",
+        "co2_ppm",
+        "espectro_pico_nm",
+        "ajuste_co2_ppm",
+        "vocs_mgm3",
+        "vocs_mgm3_log",
+        "eficiencia_normalizada",
+        "indice_estres_ambiental",
+        "mes",
+        "aqi_indice",
+        "par_temp_ratio",
+        "temp_co2_interaction",
+        "par_co2_interaction",
+        "pm10_ugm3",
+        "ajuste_temp_c",
+        "calidad_luz_ratio",
+        "purificacion_requerida_pct",
+        "humedad_vpd_interaction",
+        "mes_cos",
+        "par_distancia_optima",
+        "mes_sin",
+        "temp_humedad_interaction",
+        "temperatura_c",
+        "humedad_rel_pct",
+        "par_umol_m2_s",
+        "eficiencia_fotosintetica_pct"
+      ],
+      "target_range": [
+        0,
+        100
+      ],
+      "expected_mae": 1.208880242046584
+    }
+  },
+  "feature_validation": {
+    "required_features": [
+      "temperatura_distancia_optima",
+      "temp_optima_dist",
+      "no2_ugm3",
+      "co2_distancia_optima",
+      "indice_condiciones_luz",
+      "co2_par_ratio",
+      "co2_ppm_log",
+      "o3_ugm3",
+      "co2_ppm_sqrt",
+      "co2_ppm",
+      "espectro_pico_nm",
+      "ajuste_co2_ppm",
+      "vocs_mgm3",
+      "vocs_mgm3_log",
+      "eficiencia_normalizada",
+      "indice_estres_ambiental",
+      "mes",
+      "aqi_indice",
+      "par_temp_ratio",
+      "temp_co2_interaction",
+      "par_co2_interaction",
+      "pm10_ugm3",
+      "ajuste_temp_c",
+      "calidad_luz_ratio",
+      "purificacion_requerida_pct",
+      "humedad_vpd_interaction",
+      "mes_cos",
+      "par_distancia_optima",
+      "mes_sin",
+      "temp_humedad_interaction",
+      "temperatura_c",
+      "humedad_rel_pct",
+      "par_umol_m2_s"
+    ],
+    "feature_ranges": {
+      "temperatura_distancia_optima": {
+        "min": 0.0001095537826394,
+        "max": 7.0,
+        "mean": 2.501525846719969,
+        "std": 1.8255692447010938
+      },
+      "temp_optima_dist": {
+        "min": 0.0001095537826394,
+        "max": 7.0,
+        "mean": 2.501525846719969,
+        "std": 1.8255692447010938
+      },
+      "no2_ugm3": {
+        "min": 0.0241332862312475,
+        "max": 60.1227236091973,
+        "mean": 24.957888275309266,
+        "std": 9.899931818731487
+      },
+      "co2_distancia_optima": {
+        "min": 0.0004430392639278,
+        "max": 700.0,
+        "mean": 157.55116596451515,
+        "std": 117.84064352201098
+      },
+      "indice_condiciones_luz": {
+        "min": 0.0,
+        "max": 0.7983581951030736,
+        "mean": 0.2309002905205111,
+        "std": 0.1014463622225182
+      },
+      "co2_par_ratio": {
+        "min": 0.5240417640789882,
+        "max": 9.00776547118216,
+        "mean": 2.230150925070256,
+        "std": 1.017304134061373
+      },
+      "co2_ppm_log": {
+        "min": 5.860786223465865,
+        "max": 7.313886831633462,
+        "mean": 6.657154719925217,
+        "std": 0.2625647426913854
+      },
+      "o3_ugm3": {
+        "min": 10.0,
+        "max": 135.3299395899419,
+        "mean": 60.19682462215052,
+        "std": 19.99196778266028
+      },
+      "co2_ppm_sqrt": {
+        "min": 18.708286933869708,
+        "max": 38.72983346207417,
+        "mean": 28.11497091850823,
+        "std": 3.5519532240042055
+      },
+      "co2_ppm": {
+        "min": 350.0,
+        "max": 1500.0,
+        "mean": 803.0666998169067,
+        "std": 196.72789344516505
+      },
+      "espectro_pico_nm": {
+        "min": 680.0,
+        "max": 740.0,
+        "mean": 697.6285,
+        "std": 23.141457180870123
+      },
+      "ajuste_co2_ppm": {
+        "min": -84.90285395472442,
+        "max": 64.54929223823756,
+        "mean": -0.32987838380682,
+        "std": 21.119184892861146
+      },
+      "vocs_mgm3": {
+        "min": 0.0002204880270944,
+        "max": 1.1438732687558286,
+        "mean": 0.31069545395645043,
+        "std": 0.1803717684655501
+      },
+      "vocs_mgm3_log": {
+        "min": 0.0002204637231817,
+        "max": 0.7626141317394123,
+        "mean": 0.26122736383517203,
+        "std": 0.1363081102336372
+      },
+      "eficiencia_normalizada": {
+        "min": 0.2,
+        "max": 0.8354643954898884,
+        "mean": 0.46375638762912885,
+        "std": 0.09433568033602474
+      },
+      "indice_estres_ambiental": {
+        "min": 0.0063338035902272,
+        "max": 0.5425638609694408,
+        "mean": 0.19842457739088995,
+        "std": 0.07318615181881963
+      },
+      "mes": {
+        "min": 5.0,
+        "max": 12.0,
+        "mean": 8.6915,
+        "std": 1.9990316062374485
+      },
+      "aqi_indice": {
+        "min": 0.0,
+        "max": 89.67738156990947,
+        "mean": 46.28613868507933,
+        "std": 14.426733523442277
+      },
+      "par_temp_ratio": {
+        "min": 5.335869523027975,
+        "max": 46.1291130049712,
+        "mean": 18.470358618247,
+        "std": 6.110245056231199
+      },
+      "temp_co2_interaction": {
+        "min": 5600.0,
+        "max": 39071.30571999918,
+        "mean": 17676.369705029967,
+        "std": 4947.204507768625
+      },
+      "par_co2_interaction": {
+        "min": 52919.95552623315,
+        "max": 972218.4284104032,
+        "mean": 320767.5063876366,
+        "std": 125734.392406406
+      },
+      "pm10_ugm3": {
+        "min": 0.300440903186244,
+        "max": 50.10117334480448,
+        "mean": 20.101726535167987,
+        "std": 6.903096446410157
+      },
+      "ajuste_temp_c": {
+        "min": -6.410679163028694,
+        "max": 5.162018353281047,
+        "mean": -0.01402888328322963,
+        "std": 2.07666304190973
+      },
+      "calidad_luz_ratio": {
+        "min": 0.0,
+        "max": 0.5545069444995878,
+        "mean": 0.12866655366635982,
+        "std": 0.06473858680909553
+      },
+      "purificacion_requerida_pct": {
+        "min": 0.3522521871588981,
+        "max": 100.0,
+        "mean": 53.67792014418549,
+        "std": 15.24910841487079
+      },
+      "humedad_vpd_interaction": {
+        "min": 16.36458012436995,
+        "max": 106.04988917087242,
+        "mean": 55.786389491371416,
+        "std": 14.416370706506427
+      },
+      "mes_cos": {
+        "min": -1.0,
+        "max": 1.0,
+        "mean": -0.08832236280343041,
+        "std": 0.7372777753876942
+      },
+      "par_distancia_optima": {
+        "min": 0.0317112212184156,
+        "max": 350.0,
+        "mean": 104.18794864466831,
+        "std": 75.72158472370108
+      },
+      "mes_sin": {
+        "min": -1.0,
+        "max": 0.4999999999999999,
+        "mean": -0.531579160166249,
+        "std": 0.4075723346815203
+      },
+      "temp_humedad_interaction": {
+        "min": 617.4225828595783,
+        "max": 2690.7431575060955,
+        "mean": 1495.8480694236666,
+        "std": 295.3865982594129
+      },
+      "temperatura_c": {
+        "min": 16.0,
+        "max": 30.0,
+        "mean": 22.015851399695336,
+        "std": 2.9363778916771768
+      },
+      "humedad_rel_pct": {
+        "min": 35.0,
+        "max": 90.0,
+        "mean": 67.97220273413285,
+        "std": 9.976845362766268
+      },
+      "par_umol_m2_s": {
+        "min": 150.0,
+        "max": 800.0,
+        "mean": 399.2370207477743,
+        "std": 118.37582050798873
+      }
+    },
+    "feature_types": {
+      "temperatura_distancia_optima": "float64",
+      "temp_optima_dist": "float64",
+      "no2_ugm3": "float64",
+      "co2_distancia_optima": "float64",
+      "indice_condiciones_luz": "float64",
+      "co2_par_ratio": "float64",
+      "co2_ppm_log": "float64",
+      "o3_ugm3": "float64",
+      "co2_ppm_sqrt": "float64",
+      "co2_ppm": "float64",
+      "espectro_pico_nm": "int64",
+      "ajuste_co2_ppm": "float64",
+      "vocs_mgm3": "float64",
+      "vocs_mgm3_log": "float64",
+      "eficiencia_normalizada": "float64",
+      "indice_estres_ambiental": "float64",
+      "mes": "int64",
+      "aqi_indice": "float64",
+      "par_temp_ratio": "float64",
+      "temp_co2_interaction": "float64",
+      "par_co2_interaction": "float64",
+      "pm10_ugm3": "float64",
+      "ajuste_temp_c": "float64",
+      "calidad_luz_ratio": "float64",
+      "purificacion_requerida_pct": "float64",
+      "humedad_vpd_interaction": "float64",
+      "mes_cos": "float64",
+      "par_distancia_optima": "float64",
+      "mes_sin": "float64",
+      "temp_humedad_interaction": "float64",
+      "temperatura_c": "float64",
+      "humedad_rel_pct": "float64",
+      "par_umol_m2_s": "float64"
+    }
+  },
+  "performance_benchmarks": {
+    "eficiencia_mae_threshold": 1.9064174239247222e-13,
+    "fotoluminiscencia_mae_threshold": 1.4506562904559008,
+    "min_r2_eficiencia": 0.7,
+    "min_r2_fotoluminiscencia": 0.7
+  }
+}

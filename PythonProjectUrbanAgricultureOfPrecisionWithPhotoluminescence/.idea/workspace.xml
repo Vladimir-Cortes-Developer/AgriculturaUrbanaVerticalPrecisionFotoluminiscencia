@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cbd852f5-a830-4d5f-8792-fa2a3f665bc2" name="Changes" comment="feat(src): adicione main">
+      <change afterPath="$PROJECT_DIR$/.env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/v1/endpoints/predictions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/v1/router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/core/ml_pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/core/ml_pipeline_v1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dependencies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/requests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/responses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/prediction_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_report.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/evaluation_report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/00_EDA_agricultura_vertical.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/00_EDA_agricultura_vertical.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/04_model_evaluation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/04_model_evaluation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ml_pipeline.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Vladimir-Cortes-Developer&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Vladimir-Cortes-Developer/UrbanAgricultureOfPrecisionWithPhotoluminescence.git&quot;,
+    &quot;accountId&quot;: &quot;baabb9fa-75d6-4e0a-b062-bdad800ea182&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2xZCeYrDNLzK8Mh9QFSg9StYdCR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ml_pipeline.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User001/PycharmProjects/Talentotech2/PythonProjectUrbanAgricultureOfPrecisionWithPhotoluminescence/app/core&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User001\PycharmProjects\Talentotech2\PythonProjectUrbanAgricultureOfPrecisionWithPhotoluminescence\app\core" />
+      <recent name="C:\Users\User001\PycharmProjects\Talentotech2\PythonProjectUrbanAgricultureOfPrecisionWithPhotoluminescence\notebooks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User001\PycharmProjects\Talentotech2\PythonProjectUrbanAgricultureOfPrecisionWithPhotoluminescence\app" />
+      <recent name="C:\Users\User001\PycharmProjects\Talentotech2\PythonProjectUrbanAgricultureOfPrecisionWithPhotoluminescence\models" />
+      <recent name="C:\Users\User001\PycharmProjects\Talentotech2\PythonProjectUrbanAgricultureOfPrecisionWithPhotoluminescence" />
+      <recent name="C:\Users\User001\PycharmProjects\Talentotech2\PythonProjectUrbanAgricultureOfPrecisionWithPhotoluminescence\data\raw" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProjectUrbanAgricultureOfPrecisionWithPhotoluminescence" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.config" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cbd852f5-a830-4d5f-8792-fa2a3f665bc2" name="Changes" comment="" />
+      <created>1748136306259</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748136306259</updated>
+      <workItem from="1748136307083" duration="3330000" />
+      <workItem from="1748217595758" duration="14840000" />
+      <workItem from="1748395144807" duration="36000" />
+      <workItem from="1748399726768" duration="1850000" />
+      <workItem from="1748446752959" duration="3295000" />
+      <workItem from="1748451974163" duration="9000" />
+      <workItem from="1748481540812" duration="1380000" />
+      <workItem from="1748519590914" duration="7710000" />
+      <workItem from="1748650825022" duration="5735000" />
+      <workItem from="1748718740995" duration="707000" />
+      <workItem from="1748719554321" duration="46000" />
+      <workItem from="1748726414374" duration="12249000" />
+      <workItem from="1748824447210" duration="3034000" />
+      <workItem from="1749087695832" duration="1315000" />
+      <workItem from="1749150446863" duration="6714000" />
+    </task>
+    <task id="LOCAL-00010" summary="feat(eda): Análisis exhaustivo de correlaciones entre todas las variables.">
+      <option name="closed" value="true" />
+      <created>1748140895533</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1748140895533</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat(eda): Análisis de patrones temporales en el sistema.">
+      <option name="closed" value="true" />
+      <created>1748140967421</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1748140967421</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat(eda): Análisis del sistema de control y ajustes automáticos.">
+      <option name="closed" value="true" />
+      <created>1748141039056</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1748141039056</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat(eda): Análisis estadístico avanzado">
+      <option name="closed" value="true" />
+      <created>1748141103570</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1748141103570</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat(eda): Insights para optimización del rendimiento del sistema">
+      <option name="closed" value="true" />
+      <created>1748141213635</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1748141213635</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat(eda): Genera un resumen ejecutivo completo del análisis">
+      <option name="closed" value="true" />
+      <created>1748141310531</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1748141310531</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat(preprocessing): Configuración de visualización">
+      <option name="closed" value="true" />
+      <created>1748218100257</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1748218100257</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat(preprocessing): análisis de calidad de datos y">
+      <option name="closed" value="true" />
+      <created>1748218424894</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1748218424894</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat(preprocessing): manejo de valores faltantes">
+      <option name="closed" value="true" />
+      <created>1748218512119</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1748218512119</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat(preprocessing): detección y manejo de outliers">
+      <option name="closed" value="true" />
+      <created>1748218717101</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1748218717101</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat(preprocessing): validación de rangos específicos">
+      <option name="closed" value="true" />
+      <created>1748218860698</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1748218860698</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat(preprocessing): transformación de datos">
+      <option name="closed" value="true" />
+      <created>1748218953166</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1748218953166</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat(preprocessing): creación de features básicas">
+      <option name="closed" value="true" />
+      <created>1748219057135</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1748219057135</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat(preprocessing): división de datos">
+      <option name="closed" value="true" />
+      <created>1748219153492</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1748219153492</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat(preprocessing): guardar datos procesados">
+      <option name="closed" value="true" />
+      <created>1748219746032</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1748219746032</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feat(preprocessing): resumen del preprocesamiento">
+      <option name="closed" value="true" />
+      <created>1748220424987</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1748220424987</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feat(processing): Ingeniería de Características para Agricultura Vertical. Configuración de visualización.">
+      <option name="closed" value="true" />
+      <created>1748221255210</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1748221255210</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feat(processing): carga de datos procesados.">
+      <option name="closed" value="true" />
+      <created>1748221377194</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1748221377194</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feat(processing): análisis de correlaciones avanzado">
+      <option name="closed" value="true" />
+      <created>1748221473607</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1748221473607</updated>
+    </task>
+    <task id="LOCAL-00029" summary="feat(processing): creando features avanzadas">
+      <option name="closed" value="true" />
+      <created>1748221610252</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1748221610252</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat(processing): features polinomiales">
+      <option name="closed" value="true" />
+      <created>1748221947345</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1748221947345</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat(processing): selección de features">
+      <option name="closed" value="true" />
+      <created>1748222492227</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1748222492227</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat(processing): creación de features finales">
+      <option name="closed" value="true" />
+      <created>1748222753413</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1748222753413</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat(processing): validación de features">
+      <option name="closed" value="true" />
+      <created>1748222844601</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1748222844601</updated>
+    </task>
+    <task id="LOCAL-00034" summary="feat(processing): guardar features engineered">
+      <option name="closed" value="true" />
+      <created>1748222953146</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1748222953146</updated>
+    </task>
+    <task id="LOCAL-00035" summary="feat(processing): resumen de feature engineering">
+      <option name="closed" value="true" />
+      <created>1748223229216</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1748223229216</updated>
+    </task>
+    <task id="LOCAL-00036" summary="feat(processing): Entrenamiento y Evaluación de Modelos ML para Agricultura Vertical">
+      <option name="closed" value="true" />
+      <created>1748223778349</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1748223778349</updated>
+    </task>
+    <task id="LOCAL-00037" summary="feat(processing): carga de datos features engineered">
+      <option name="closed" value="true" />
+      <created>1748223871798</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1748223871798</updated>
+    </task>
+    <task id="LOCAL-00038" summary="feat(processing): configuración de modelos">
+      <option name="closed" value="true" />
+      <created>1748224076912</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1748224076912</updated>
+    </task>
+    <task id="LOCAL-00039" summary="feat(processing): entrenamiento para eficiencia fotosintética">
+      <option name="closed" value="true" />
+      <created>1748224261987</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1748224261987</updated>
+    </task>
+    <task id="LOCAL-00040" summary="feat(processing): entrenamiento para eficiencia fotosintética">
+      <option name="closed" value="true" />
+      <created>1748225296285</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1748225296285</updated>
+    </task>
+    <task id="LOCAL-00041" summary="feat(processing): entrenamiento para eficiencia fotosintética">
+      <option name="closed" value="true" />
+      <created>1748225489622</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1748225489622</updated>
+    </task>
+    <task id="LOCAL-00042" summary="feat(processing): comparación de modelos">
+      <option name="closed" value="true" />
+      <created>1748225644665</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1748225644665</updated>
+    </task>
+    <task id="LOCAL-00043" summary="feat(processing): análisis de residuos">
+      <option name="closed" value="true" />
+      <created>1748225863257</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1748225863257</updated>
+    </task>
+    <task id="LOCAL-00044" summary="feat(processing): análisis de importancia de features">
+      <option name="closed" value="true" />
+      <created>1748226271854</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1748226271854</updated>
+    </task>
+    <task id="LOCAL-00045" summary="feat(processing): validación cruzada">
+      <option name="closed" value="true" />
+      <created>1748226391773</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1748226391774</updated>
+    </task>
+    <task id="LOCAL-00046" summary="feat(processing): guardar modelos y resultados">
+      <option name="closed" value="true" />
+      <created>1748227185595</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1748227185595</updated>
+    </task>
+    <task id="LOCAL-00047" summary="feat(processing): resumen final">
+      <option name="closed" value="true" />
+      <created>1748227274515</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1748227274515</updated>
+    </task>
+    <task id="LOCAL-00048" summary="feat(processing): adicione modelos de eficiencia, fotoluminiscencia y modelo comparativo">
+      <option name="closed" value="true" />
+      <created>1748521682980</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1748521682980</updated>
+    </task>
+    <task id="LOCAL-00049" summary="feat(processing): adicione 04_model_evaluation.ipynb. Carga de datos y modelos. Modelos y predicciones. Evaluación comprehensiva. Analisis visual detallado. Análísis de importancia de features. Análisis de dependencia parcial. Análisis de estabilidad. Análisis de casos extremos. Análisis de robustez. Comparación con baseline. Reporte Final.">
+      <option name="closed" value="true" />
+      <created>1748651798165</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1748651798165</updated>
+    </task>
+    <task id="LOCAL-00050" summary="feat(processing): adicione 04_model_evaluation.ipynb. Carga de datos y modelos. Modelos y predicciones. Evaluación comprehensiva. Analisis visual detallado. Análísis de importancia de features. Análisis de dependencia parcial. Análisis de estabilidad. Análisis de casos extremos. Análisis de robustez. Comparación con baseline. Reporte Final.">
+      <option name="closed" value="true" />
+      <created>1748652173499</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1748652173500</updated>
+    </task>
+    <task id="LOCAL-00051" summary="feat(src): adicione ml_pipeline.py. Cargue modelos ya entrenados.">
+      <option name="closed" value="true" />
+      <created>1748652664642</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1748652664642</updated>
+    </task>
+    <task id="LOCAL-00052" summary="feat(src): adicione ml_pipeline.py. Cargue Dataset para predicciones.">
+      <option name="closed" value="true" />
+      <created>1748653295451</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1748653295451</updated>
+    </task>
+    <task id="LOCAL-00053" summary="feat(src): adicione ml_pipeline.py. predecir eficiencia fotosintética.">
+      <option name="closed" value="true" />
+      <created>1748653387170</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1748653387170</updated>
+    </task>
+    <task id="LOCAL-00054" summary="feat(src): adicione feature engineering básico&quot;.">
+      <option name="closed" value="true" />
+      <created>1748653669077</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1748653669077</updated>
+    </task>
+    <task id="LOCAL-00055" summary="feat(src): Predecir tanto eficiencia como fotoluminiscencia">
+      <option name="closed" value="true" />
+      <created>1748653757139</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1748653757139</updated>
+    </task>
+    <task id="LOCAL-00056" summary="feat(src): validar datos de entrada">
+      <option name="closed" value="true" />
+      <created>1748653849648</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1748653849648</updated>
+    </task>
+    <task id="LOCAL-00057" summary="feat(src): crear pipeline para producción">
+      <option name="closed" value="true" />
+      <created>1748653950446</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1748653950447</updated>
+    </task>
+    <task id="LOCAL-00058" summary="feat(src): adicione main">
+      <option name="closed" value="true" />
+      <created>1748653989764</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1748653989764</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="8bed660e-e13a-49df-acca-e6c7c4d1b3ca" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="8bed660e-e13a-49df-acca-e6c7c4d1b3ca">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(processing): selección de features" />
+    <MESSAGE value="feat(processing): creación de features finales" />
+    <MESSAGE value="feat(processing): validación de features" />
+    <MESSAGE value="feat(processing): guardar features engineered" />
+    <MESSAGE value="feat(processing): resumen de feature engineering" />
+    <MESSAGE value="feat(processing): Entrenamiento y Evaluación de Modelos ML para Agricultura Vertical" />
+    <MESSAGE value="feat(processing): carga de datos features engineered" />
+    <MESSAGE value="feat(processing): configuración de modelos" />
+    <MESSAGE value="feat(processing): entrenamiento para eficiencia fotosintética" />
+    <MESSAGE value="feat(processing): comparación de modelos" />
+    <MESSAGE value="feat(processing): análisis de residuos" />
+    <MESSAGE value="feat(processing): análisis de importancia de features" />
+    <MESSAGE value="feat(processing): validación cruzada" />
+    <MESSAGE value="feat(processing): guardar modelos y resultados" />
+    <MESSAGE value="feat(processing): resumen final" />
+    <MESSAGE value="feat(processing): adicione modelos de eficiencia, fotoluminiscencia y modelo comparativo" />
+    <MESSAGE value="feat(processing): adicione 04_model_evaluation.ipynb. Carga de datos y modelos. Modelos y predicciones. Evaluación comprehensiva. Analisis visual detallado. Análísis de importancia de features. Análisis de dependencia parcial. Análisis de estabilidad. Análisis de casos extremos. Análisis de robustez. Comparación con baseline. Reporte Final." />
+    <MESSAGE value="feat(src): adicione ml_pipeline.py. Cargue modelos ya entrenados." />
+    <MESSAGE value="feat(src): adicione ml_pipeline.py. Cargue Dataset para predicciones." />
+    <MESSAGE value="feat(src): adicione ml_pipeline.py. predecir eficiencia fotosintética." />
+    <MESSAGE value="feat(src): adicione feature engineering básico&quot;." />
+    <MESSAGE value="feat(src): Predecir tanto eficiencia como fotoluminiscencia" />
+    <MESSAGE value="feat(src): validar datos de entrada" />
+    <MESSAGE value="feat(src): crear pipeline para producción" />
+    <MESSAGE value="feat(src): adicione main" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(src): adicione main" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PythonProjectUrbanAgricultureOfPrecisionWithPhotoluminescence$config.coverage" NAME="config Coverage Results" MODIFIED="1749159177846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/PythonProjectUrbanAgricultureOfPrecisionWithPhotoluminescence$ml_pipeline.coverage" NAME="ml_pipeline Coverage Results" MODIFIED="1748790911261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/core" />
+  </component>
+</project>

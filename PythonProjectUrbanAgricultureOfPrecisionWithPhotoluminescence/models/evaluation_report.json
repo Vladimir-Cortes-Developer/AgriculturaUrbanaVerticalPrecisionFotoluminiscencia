@@ -1,0 +1,449 @@
+{
+  "evaluation_timestamp": "2025-06-01T10:18:51.324385",
+  "test_set_size": 10000,
+  "models_evaluated": {
+    "eficiencia": {
+      "model_name": "LinearRegression",
+      "metrics": {
+        "MAE": 1.588681186603935e-13,
+        "MSE": 4.035500633280953e-26,
+        "RMSE": 2.0088555531149953e-13,
+        "R2": 1.0,
+        "MAPE": 3.606688193307816e-15,
+        "Mean_Residual": 7.286615755219828e-15,
+        "Std_Residual": 2.0075336003077338e-13,
+        "Max_Error": 9.947598300641403e-13,
+        "Q95_Error": 3.979039320256561e-13,
+        "Pearson_Corr": 1.0,
+        "Spearman_Corr": 0.9999999878229998,
+        "MAE_0_50": 1.5514883877674735e-13,
+        "MAE_50_75": 1.6541979895516264e-13,
+        "MAE_75_100": 2.7388192723843863e-13
+      },
+      "robustness": {
+        "0.01": {
+          "r2": 0.9998990277629588,
+          "mae": 0.07562586883638625,
+          "r2_degradation": 0.00010097223704119695
+        },
+        "0.05": {
+          "r2": 0.9974895877053809,
+          "mae": 0.37759577744238276,
+          "r2_degradation": 0.0025104122946191243
+        },
+        "0.1": {
+          "r2": 0.9897986620276078,
+          "mae": 0.7589506769868205,
+          "r2_degradation": 0.0102013379723922
+        }
+      },
+      "baseline_comparison": {
+        "Model": {
+          "MAE": 1.588681186603935e-13,
+          "R2": 1.0
+        },
+        "Mean": {
+          "MAE": 7.532268123887584,
+          "R2": 0.0
+        },
+        "Median": {
+          "MAE": 7.531968273068555,
+          "R2": -5.5763511806583566e-05
+        },
+        "Last_Value": {
+          "MAE": 9.43923680335971,
+          "R2": -0.531750665514469
+        }
+      }
+    },
+    "fotoluminiscencia": {
+      "model_name": "RandomForest",
+      "metrics": {
+        "MAE": 1.208880242046584,
+        "MSE": 2.404593323240601,
+        "RMSE": 1.5506751185340535,
+        "R2": 0.981111588589379,
+        "MAPE": 0.03299392296732245,
+        "Mean_Residual": 0.00019454576667517643,
+        "Std_Residual": 1.5506751063303188,
+        "Max_Error": 7.799954912388529,
+        "Q95_Error": 3.114186617242247,
+        "Pearson_Corr": 0.9909636953812498,
+        "Spearman_Corr": 0.9900804412222642,
+        "MAE_0_50": 1.1868172803620278,
+        "MAE_50_75": 1.2844407088208167,
+        "MAE_75_100": 2.4908351125401396
+      },
+      "robustness": {
+        "0.01": {
+          "r2": 0.9733325704539298,
+          "mae": 1.4328291112724063,
+          "r2_degradation": 0.007779018135449123
+        },
+        "0.05": {
+          "r2": 0.9513399337455302,
+          "mae": 1.9407450033258156,
+          "r2_degradation": 0.029771654843848805
+        },
+        "0.1": {
+          "r2": 0.9311832522316505,
+          "mae": 2.322484452318027,
+          "r2_degradation": 0.04992833635772842
+        }
+      },
+      "baseline_comparison": {
+        "Model": {
+          "MAE": 1.208880242046584,
+          "R2": 0.981111588589379
+        },
+        "Mean": {
+          "MAE": 9.03183055180827,
+          "R2": 0.0
+        },
+        "Median": {
+          "MAE": 9.029930794528315,
+          "R2": -0.000432016021502335
+        },
+        "Last_Value": {
+          "MAE": 11.935557012889555,
+          "R2": -0.6722566026636434
+        }
+      }
+    }
+  },
+  "feature_importance": {
+    "eficiencia": {
+      "top_10_permutation": [
+        {
+          "feature": "eficiencia_normalizada",
+          "importance_mean": 10.690875075795429,
+          "importance_std": 0.05157116898052156
+        },
+        {
+          "feature": "temperatura_distancia_optima",
+          "importance_mean": 2.2012663360726495e-09,
+          "importance_std": 1.1295031284061291e-11
+        },
+        {
+          "feature": "temp_optima_dist",
+          "importance_mean": 2.2012498516943426e-09,
+          "importance_std": 1.1293470398104082e-11
+        },
+        {
+          "feature": "co2_ppm_sqrt",
+          "importance_mean": 3.752905826104326e-12,
+          "importance_std": 2.5556126205343183e-14
+        },
+        {
+          "feature": "co2_ppm",
+          "importance_mean": 2.7232303523305746e-12,
+          "importance_std": 1.848762816825846e-14
+        },
+        {
+          "feature": "co2_ppm_log",
+          "importance_mean": 1.0465753774724361e-12,
+          "importance_std": 7.068775297177363e-15
+        },
+        {
+          "feature": "temperatura_c",
+          "importance_mean": 2.817078836869769e-13,
+          "importance_std": 1.8583851727681353e-15
+        },
+        {
+          "feature": "temp_humedad_interaction",
+          "importance_mean": 1.5359844951490233e-13,
+          "importance_std": 9.794693703822404e-16
+        },
+        {
+          "feature": "par_umol_m2_s",
+          "importance_mean": 9.636480058361485e-14,
+          "importance_std": 7.833856402620364e-16
+        },
+        {
+          "feature": "vocs_mgm3",
+          "importance_mean": 9.416389445959795e-14,
+          "importance_std": 9.820576253958398e-16
+        }
+      ],
+      "top_10_intrinsic": []
+    },
+    "fotoluminiscencia": {
+      "top_10_permutation": [
+        {
+          "feature": "par_umol_m2_s",
+          "importance_mean": 4.237456684316089,
+          "importance_std": 0.02755005343428482
+        },
+        {
+          "feature": "eficiencia_normalizada",
+          "importance_mean": 3.0239942099420816,
+          "importance_std": 0.02640726198724797
+        },
+        {
+          "feature": "eficiencia_fotosintetica_pct",
+          "importance_mean": 2.955085665145737,
+          "importance_std": 0.025182269367475932
+        },
+        {
+          "feature": "calidad_luz_ratio",
+          "importance_mean": 1.3173406820792262,
+          "importance_std": 0.002616300012401843
+        },
+        {
+          "feature": "par_distancia_optima",
+          "importance_mean": 0.7839199575322515,
+          "importance_std": 0.0038429512519668335
+        },
+        {
+          "feature": "co2_distancia_optima",
+          "importance_mean": 0.6579520850701323,
+          "importance_std": 0.008181657359167527
+        },
+        {
+          "feature": "indice_estres_ambiental",
+          "importance_mean": 0.31562169116980704,
+          "importance_std": 0.005424527198036817
+        },
+        {
+          "feature": "vocs_mgm3_log",
+          "importance_mean": 0.28518824475404103,
+          "importance_std": 0.0035284499583410813
+        },
+        {
+          "feature": "vocs_mgm3",
+          "importance_mean": 0.2803607411603205,
+          "importance_std": 0.0035813513266194164
+        },
+        {
+          "feature": "o3_ugm3",
+          "importance_mean": 0.20909171455071246,
+          "importance_std": 0.002731256418078225
+        }
+      ],
+      "top_10_intrinsic": [
+        {
+          "feature": "par_umol_m2_s",
+          "importance": 0.538554286403952
+        },
+        {
+          "feature": "eficiencia_normalizada",
+          "importance": 0.148608190974631
+        },
+        {
+          "feature": "eficiencia_fotosintetica_pct",
+          "importance": 0.144536014471524
+        },
+        {
+          "feature": "par_distancia_optima",
+          "importance": 0.04717877837504262
+        },
+        {
+          "feature": "calidad_luz_ratio",
+          "importance": 0.020500762139979093
+        },
+        {
+          "feature": "co2_distancia_optima",
+          "importance": 0.0119221876425882
+        },
+        {
+          "feature": "indice_estres_ambiental",
+          "importance": 0.006792646266398821
+        },
+        {
+          "feature": "vocs_mgm3",
+          "importance": 0.005921506050091637
+        },
+        {
+          "feature": "vocs_mgm3_log",
+          "importance": 0.0058851124640353246
+        },
+        {
+          "feature": "o3_ugm3",
+          "importance": 0.005866721950117964
+        }
+      ]
+    }
+  },
+  "stability_analysis": {
+    "eficiencia": [
+      {
+        "bin": 0,
+        "bin_center": 23.17732197744944,
+        "count": 178,
+        "mae": 2.220446049250313e-13,
+        "rmse": 2.5960839272503565e-13,
+        "r2": 1.0,
+        "bias": -1.9861266189743699e-13
+      },
+      {
+        "bin": 1,
+        "bin_center": 29.531965932348324,
+        "count": 579,
+        "mae": 1.7969122639667128e-13,
+        "rmse": 2.1213600227991937e-13,
+        "r2": 1.0,
+        "bias": -1.4170971055595435e-13
+      },
+      {
+        "bin": 2,
+        "bin_center": 35.88660988724721,
+        "count": 1441,
+        "mae": 1.6138343649335404e-13,
+        "rmse": 1.9697053144021943e-13,
+        "r2": 1.0,
+        "bias": -1.0409623660396582e-13
+      },
+      {
+        "bin": 3,
+        "bin_center": 42.241253842146094,
+        "count": 2393,
+        "mae": 1.4893783378907908e-13,
+        "rmse": 1.8524610806089245e-13,
+        "r2": 1.0,
+        "bias": -4.673013612784144e-14
+      },
+      {
+        "bin": 4,
+        "bin_center": 48.595897797044984,
+        "count": 2592,
+        "mae": 1.4475937595402626e-13,
+        "rmse": 1.8357814813035445e-13,
+        "r2": 1.0,
+        "bias": 5.693662276904815e-15
+      },
+      {
+        "bin": 5,
+        "bin_center": 54.95054175194387,
+        "count": 1742,
+        "mae": 1.5552809709835028e-13,
+        "rmse": 2.035196048765246e-13,
+        "r2": 1.0,
+        "bias": 7.097269576478612e-14
+      },
+      {
+        "bin": 6,
+        "bin_center": 61.30518570684275,
+        "count": 799,
+        "mae": 1.8057923394674086e-13,
+        "rmse": 2.3137146032532974e-13,
+        "r2": 1.0,
+        "bias": 1.3465629668184526e-13
+      },
+      {
+        "bin": 7,
+        "bin_center": 67.65982966174164,
+        "count": 230,
+        "mae": 2.287329745899036e-13,
+        "rmse": 2.894455550361116e-13,
+        "r2": 1.0,
+        "bias": 2.0710776089285702e-13
+      },
+      {
+        "bin": 8,
+        "bin_center": 74.01447361664052,
+        "count": 41,
+        "mae": 2.918424309804899e-13,
+        "rmse": 3.707465053303374e-13,
+        "r2": 1.0,
+        "bias": 2.8283066945377646e-13
+      }
+    ],
+    "fotoluminiscencia": [
+      {
+        "bin": 0,
+        "bin_center": 13.766054065273861,
+        "count": 183,
+        "mae": 1.6407178424148554,
+        "rmse": 2.000978630139444,
+        "r2": 0.26873041680309917,
+        "bias": 1.5095114560721141
+      },
+      {
+        "bin": 1,
+        "bin_center": 21.298162195821583,
+        "count": 650,
+        "mae": 1.2981707461933312,
+        "rmse": 1.665089378874535,
+        "r2": 0.3937051728724643,
+        "bias": 0.7855338202002545
+      },
+      {
+        "bin": 2,
+        "bin_center": 28.83027032636931,
+        "count": 1533,
+        "mae": 1.2068822636962335,
+        "rmse": 1.5614064624609107,
+        "r2": 0.4735217075202123,
+        "bias": 0.5633207260520745
+      },
+      {
+        "bin": 3,
+        "bin_center": 36.36237845691703,
+        "count": 2508,
+        "mae": 1.132996338762958,
+        "rmse": 1.4523207576290196,
+        "r2": 0.5433947644847819,
+        "bias": 0.21211254336194882
+      },
+      {
+        "bin": 4,
+        "bin_center": 43.894486587464755,
+        "count": 2409,
+        "mae": 1.170176747903227,
+        "rmse": 1.490955874638111,
+        "r2": 0.5249084155281344,
+        "bias": -0.17303460031406956
+      },
+      {
+        "bin": 5,
+        "bin_center": 51.42659471801248,
+        "count": 1698,
+        "mae": 1.2101483557951493,
+        "rmse": 1.55598770517209,
+        "r2": 0.47243976010890254,
+        "bias": -0.48544518690434935
+      },
+      {
+        "bin": 6,
+        "bin_center": 58.95870284856021,
+        "count": 753,
+        "mae": 1.2402579398994693,
+        "rmse": 1.5996667862514597,
+        "r2": 0.4521978701030308,
+        "bias": -0.7788392106885511
+      },
+      {
+        "bin": 7,
+        "bin_center": 66.49081097910792,
+        "count": 219,
+        "mae": 1.61119668997992,
+        "rmse": 1.951445432280471,
+        "r2": 0.0832253486780512,
+        "bias": -1.2078675765057838
+      },
+      {
+        "bin": 8,
+        "bin_center": 74.02291910965565,
+        "count": 43,
+        "mae": 1.8605213587368963,
+        "rmse": 2.2216016171357182,
+        "r2": -0.15412287611110664,
+        "bias": -1.854382286615889
+      }
+    ]
+  },
+  "summary": {
+    "eficiencia": {
+      "mae": 1.588681186603935e-13,
+      "r2": 1.0,
+      "rmse": 2.0088555531149953e-13,
+      "performance_level": "Excelente"
+    },
+    "fotoluminiscencia": {
+      "mae": 1.208880242046584,
+      "r2": 0.981111588589379,
+      "rmse": 1.5506751185340535,
+      "performance_level": "Excelente"
+    }
+  }
+}
